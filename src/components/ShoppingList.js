@@ -14,6 +14,7 @@ function ShoppingList() {
                     cover={plant.cover}
                     light={plant.light}
                     water={plant.water}
+                    price={plant.price}
                 />
             ))}
         </div>
