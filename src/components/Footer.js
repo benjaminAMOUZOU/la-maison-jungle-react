@@ -11,17 +11,17 @@ function Footer() {
 
     return (
         <div className="row">
-            <div className="col-lg-12 text-center mb-3">
+            <div className="offset-lg-5 col-lg-3 mb-3 mt-3 text-center">
                 <p>Pour les passionné-e-s des plantes</p>
                 <p>Laissez-nous votre mail:</p>
                 <input
-                    style={{ width: 250 }}
                     type="text"
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     onBlur={(e) => checkValue(e.target.value)}
                     name="mail"
                     placeholder="Ecrivez votre mail"
+                    className="form-control form-control-sm"
                 />
             </div>
         </div>
