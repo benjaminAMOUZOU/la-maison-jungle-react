@@ -1,4 +1,5 @@
 import CareScale from './CareScale'
+import React from 'react'
 
 function PlantItem({ id, name, cover, light, water, category, price, cart, updateCart }) {
     function addToCart(name, price) {
@@ -23,7 +24,7 @@ function PlantItem({ id, name, cover, light, water, category, price, cart, updat
                     className="card-img-top"
                     src={cover}
                     alt={`${name} cover`}
-                    style={{ width: 221, height: 221 }}
+                    style={{ width: '100%', height: 221 }}
                 />
                 <div className="card-body">
                     <div className="row">
@@ -45,7 +46,7 @@ function PlantItem({ id, name, cover, light, water, category, price, cart, updat
                     </div>
 
                     <div className="text-start mt-2">
-                        <span className="text-danger">{price} FCFA</span>
+                        <span className="text-danger">{price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} FCFA</span>
                     </div>
 
                     <div className="text-end mt-2">

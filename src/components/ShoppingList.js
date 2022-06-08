@@ -1,15 +1,28 @@
 import React from 'react'
+import { useState } from 'react'
 import { plantList } from '../datas/plantList'
+import Categorie from './Categorie'
 import PlantItem from './PlantItem'
 
 function ShoppingList({ cart, updateCart }) {
     const text = 'Ici achetez toutes les plantes dont vous avez toujours rêvé !'
+    const [categorie, updateCategorie] = useState('')
+
+    let plantFiltered = plantList
+    if (categorie !== '') {
+        plantFiltered = plantList.filter((plant) => {
+            return plant.category === categorie
+        })
+    }
 
     return (
         <div className="col-lg-9">
             <p>{text}</p>
             <div className="row">
-                {plantList.map((plant) => (
+                <Categorie categorie={categorie} updateCategorie={updateCategorie} />
+            </div>
+            <div className="row">
+                {plantFiltered.map((plant) => (
                     <PlantItem
                         key={`${plant.id}`}
                         id={plant.id}
