@@ -1,5 +1,11 @@
+// import { useEffect } from 'react'
+
 function Cart({ cart, updateCart }) {
     const total = cart.reduce((acc, plantType) => acc + plantType.amount * plantType.price, 0)
+
+    // useEffect(() => {
+    //     document.title = `LMJ: ${total}€ d'achats`
+    // })
 
     return (
         <div className="col-lg-3 ms-0">

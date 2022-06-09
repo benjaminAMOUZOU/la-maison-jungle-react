@@ -1,10 +1,20 @@
+import monstera from '../images/monstera.jpg'
+import ficus from '../images/fucus-lyrata.jpeg'
+import pothos from '../images/pothos-argente.jpg'
+import geranium from '../images/geranium.jpg'
+import aloe from '../images/aloe.jpg'
+import succulente from '../images/succulente.webp'
+import yucca from '../images/yucca.jpeg'
+import olivier from '../images/olivier.jpeg'
+import basilique from '../images/basilique.jpg'
+
 export const plantList = [
     {
         name: 'Monstera',
         category: 'Classique',
         id: '1ed',
         isBestSale: true,
-        cover: './images/monstera.jpg',
+        cover: monstera,
         light: 2,
         water: 3,
         price: 1500,
@@ -12,7 +22,7 @@ export const plantList = [
     {
         name: 'Ficus lyrata',
         category: 'Classique',
-        cover: './images/fucus-lyrata.jpeg',
+        cover: ficus,
         id: '2ab',
         light: 3,
         water: 1,
@@ -23,7 +33,7 @@ export const plantList = [
         category: 'Classique',
         id: '3sd',
         light: 1,
-        cover: './images/pothos-argente.jpg',
+        cover: pothos,
         water: 2,
         price: 1000,
     },
@@ -32,7 +42,7 @@ export const plantList = [
         category: 'Classique',
         id: '4kk',
         light: 3,
-        cover: './images/yucca.jpeg',
+        cover: yucca,
         water: 1,
         price: 3000,
     },
@@ -41,7 +51,7 @@ export const plantList = [
         category: 'Extérieur',
         id: '5pl',
         light: 3,
-        cover: './images/olivier.jpeg',
+        cover: olivier,
         water: 1,
         price: 2500,
     },
@@ -50,7 +60,7 @@ export const plantList = [
         category: 'Extérieur',
         id: '6uo',
         light: 2,
-        cover: './images/geranium.jpg',
+        cover: geranium,
         water: 2,
         price: 5000,
     },
@@ -60,7 +70,7 @@ export const plantList = [
         id: '7ie',
         isBestSale: true,
         light: 2,
-        cover: './images/basilique.jpg',
+        cover: basilique,
         water: 3,
         price: 750,
     },
@@ -69,7 +79,7 @@ export const plantList = [
         category: 'Plante grasse',
         id: '8fp',
         light: 2,
-        cover: './images/aloe.jpg',
+        cover: aloe,
         water: 1,
         price: 1850,
     },
@@ -78,7 +88,7 @@ export const plantList = [
         category: 'Plante grasse',
         id: '9vn',
         light: 2,
-        cover: './images/succulente.webp',
+        cover: succulente,
         water: 1,
         price: 2200,
     },
